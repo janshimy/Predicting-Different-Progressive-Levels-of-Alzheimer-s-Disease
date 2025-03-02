@@ -12,7 +12,7 @@
 
 ## A.Business Understanding - Project Objective
 
-- This is a not required model development passion project on a real dataset related to predicting the different progressive levels of Alzheimer's disease (AD). The students are expected to use tensorflow library for modeling process and will be asked to submit predicted labels for a test dataset by which their score will be evaulated objectively. 
+- This is a **not-required** model development passion project on a real dataset related to predicting the different progressive levels of Alzheimer's disease (AD). The students are expected to use tensorflow library for modeling process and will be asked to submit predicted labels for a test dataset by which their score will be evaulated objectively. 
 - This project is included in the *UpSchool - Google Developers Machine Learning - Deep Learning Program*. 
 - In this project, you are supposed to provide a data science model to determine the level of Alzheimer disease. The levels are the ordinal categories from lower to higher respectively: 0, 0.25, 0.50, 1.0, 2.0, 3.0 (that are the progressive levels of Alzheimer's disease)
 - You are expected to use the following features:
