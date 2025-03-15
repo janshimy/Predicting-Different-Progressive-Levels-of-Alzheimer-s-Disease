@@ -13,7 +13,7 @@
 ## A.Business Understanding - Project Objective
 
 - This is a **not-required** model development passion project on a real dataset related to predicting the different progressive levels of Alzheimer's disease (AD). We use tensorflow library for modeling process and predict the labels on a test dataset by which their score is evaulated objectively.
-- 
+  
 - In this project, we build a data science model to determine the level of Alzheimer disease. The levels are the ordinal categories from lower to higher respectively: 0, 0.25, 0.50, 1.0, 2.0, 3.0 (that are the progressive levels of Alzheimer's disease)
 - We use the following features:
 
