@@ -2,15 +2,37 @@
 
 ## Table of Contents
 
-- [Predicting Different Progressive Levels of Alzheimer's Disease](#predicting-different-progressive-levels-of-alzheimers-disease)
   - [Table of Contents](#table-of-contents)
-  - [A.Business Understanding - Project Objective](#abusiness-understanding---project-objective)
-  - [B.Data Understanding](#bdata-understanding)
-  - [C.Data Analysis](#cdata-analysis)
-  - [D.Feature Enginering](#dfeature-enginering)
-  - [E. Modeling](#e-modeling)
+  - [Overview](#overview)
+  - [Motivation](#motivation)
+  - [Project Details](#project-details)
+    - [A.Business Understanding - Project Objective](#abusiness-understanding---project-objective)
+    - [B.Data Understanding](#bdata-understanding)
+    - [C.Data Analysis](#cdata-analysis)
+    - [D.Feature Enginering](#dfeature-enginering)
+    - [E. Modeling](#e-modeling)
+  - [How to Use](#how-to-use)
 
-## A.Business Understanding - Project Objective
+## Overview
+This repository is a passion project dedicated to exploring machine learning techniques for predicting the progressive levels of Alzheimer's Disease. Driven by a personal commitment to leveraging data science for healthcare innovation, this project aims to contribute to a deeper understanding of how Alzheimer's Disease develops over time.
+
+## Motivation
+Alzheimer's Disease affects millions of lives globally, and early, accurate prediction of its progression can make a critical difference in treatment and care planning. This project was born from a desire to apply advanced analytical methods to a significant real-world problem, with the hope of inspiring further research and practical solutions in the field of medical diagnostics.
+
+## Project Details
+
+- **Data Exploration & Preprocessing:**  
+  The project utilizes diverse clinical and biological data sources. Comprehensive data cleaning and preprocessing ensure that the models are trained on high-quality inputs.
+
+- **Methodology:**  
+  Advanced machine learning models are employed to capture patterns and trends in disease progression. Techniques include both classification and regression analyses aimed at predicting various stages of Alzheimer's Disease.
+
+- **Results:**  
+  Early experiments have shown promising results. The insights derived from these models offer a basis for more refined analyses and further investigation into predictive healthcare applications.
+
+
+
+### A.Business Understanding - Project Objective
 
 - This is a **not-required** model development passion project on a real dataset related to predicting the different progressive levels of Alzheimer's disease (AD). We use tensorflow library for modeling process and predict the labels on a test dataset by which their score is evaulated objectively.
   
@@ -19,7 +41,7 @@
 
 ['EDUC','NACCMOCA','MARISTAT','NACCFAM','NACCGDS','NACCNE4S','NACCAPOE', 'INDEPEND','RESIDENC','ANYMEDS','NACCAMD','DEL','HALL','DEPD','ANX','APA','DISN', 'IRR','MOT','AGIT','ELAT','NITE','APP','DROPACT','NACCAGEB','SEX']
 
-## B.Data Understanding
+### B.Data Understanding
 
 
 | Index | Variable Name | Section                                             | Variable type         | Data type               | Short Descriptor                                                  | Data Source | Allowable codes                                                                                                                                                                                                                                                                                              | Missing Codes | Description / derivation                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -62,7 +84,7 @@
 
 ![Histogram of Binary Target Categories (Before SMOTE Oversampling)](Histogram%20of%20Binary%20Target%20Categories%20(Before%20SMOTE%20Oversampling).png)
 
-## C.Data Analysis
+### C.Data Analysis
 
 - No data dropping process was performed.
 - Quantile values were determined as 0.25 and 0.75, and the values above these values were perceived as outlier and the upper and lower values were equalized to Threshold values.
@@ -74,12 +96,12 @@
 - Chi-Square test was performed for nominal variables.At the end of this, the P-Value value of more than 0.5 ['naccfam', 'maristat_4', 'maristat_6'] was decided not to use the model.
 - ANOVA test was performed for numerical variables. At the end of this, it was observed that the P-Value value was not larger than 0.5.
 
-## D.Feature Enginering
+### D.Feature Enginering
 
 - Label Encoding was performed. But it was found that there was no column that should be made Label Encoding.
 - One-Hot Encoding was performed. At the end of this, It was observed that this process should be done in two features (['NACCNE4S', 'NACCAPOE']).
 
-## E. Modeling
+### E. Modeling
 
 - The data imbalance in the train datas was removed with Smote OversamPling before the model was performed.
 
@@ -92,3 +114,11 @@
 ![Comparison of Validation Accuracy Result - Validation Tunned Accuracy Result](Comparison%20of%20Validation%20Accuracy%20Result%20-%20Validation%20Tunned%20Accuracy%20Result.png)
 
 ![Comparison of Test Accuracy Result - Test Tunned Accuracy Result](Comparison%20of%20Test%20Accuracy%20Result%20-%20Test%20Tunned%20Accuracy%20Result.png)
+
+## How to Use
+To explore the analysis and reproduce the results:
+
+1. Clone this repository to your local machine.
+2. Install the necessary dependencies using the following command:
+   ```bash
+   pip install -r requirements.txt
